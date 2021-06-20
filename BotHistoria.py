@@ -10,11 +10,11 @@ Original file is located at
 import tweepy
 import time
 
-auth = tweepy.OAuthHandler('V2oqYIT9iFBTVxRbkMDJvwk1Q', 'WKgmOaSWYmQpF4bx2Wl93PSSVaE9ZJWYY6NEoJ93lKsydWkn8b')
+auth = tweepy.OAuthHandler('consumer_key', 'consumer_secret')
 # consumer_key, consumer_secret
 # etapa de autenticação. Essas chaves são obtidas dentro do Twitter Deveolper, "API Key" e "API Key Secret"
 
-auth.set_access_token('1406709015967584256-uiK8ns0sZ87BnDHf6fELavpjWvv66W', 'lbFmUJUC3U4xbiRenLfCEkHeVqiTg49vgNfVKqoxqvVsi')
+auth.set_access_token('key', 'secret')
 #key, secret
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
