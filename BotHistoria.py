@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 
 class Tweets:
   """
-    This class will get the key values from twitter developer (https://developer.twitter.com/) 
-    and will call a method which show the user who tweeted: "a história vai cobrar". After that, the method
+    This class will get key values from twitter developer (https://developer.twitter.com/) 
+    and will call a method which shows the user who tweeted: "a história vai cobrar". After that, the method
     "__tweeting", using self.api.update_status, will answer with the follow phrase: 
     " A história não cobra nada! Ustra morreu de velho."
 
@@ -34,7 +34,7 @@ class Tweets:
     #key, secret
 
     self.api = tweepy.API(auth, wait_on_rate_limit=True)
-    # This line will be executed after que o limite dos tweets for atingido
+    # This line will be executed after tweet limit is reached
 
     self.searching_phrase = searching_phrase
     self.tweets_count = tweets_count
